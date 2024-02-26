@@ -7,3 +7,4 @@ class Slime(Character):
         self.hp = 20
         self.atk = 1
         self.defense = 2
+        self.exp = 10

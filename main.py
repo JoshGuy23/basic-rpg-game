@@ -7,7 +7,7 @@ enemy = Slime()
 
 
 def enemy_action(en):
-    enemy_choice = random.randint(1,2)
+    enemy_choice = random.randint(1, 2)
     return enemy_choice
 
 
@@ -36,5 +36,6 @@ while enemy.hp > 0 and player.hp > 0:
 
 if enemy.hp <= 0:
     print("You defeated the Slime! Congratulations!")
+    player.level_up(enemy)
 elif player.hp <= 0:
     print("Game Over.")
